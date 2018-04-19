@@ -1,0 +1,11 @@
+.q_infiniteLoading,.q_infiniteOver{
+  height:50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #a1a1a1;
+  font-size: 12px;
+}
+.q_infiniteLoading_hide,.q_infiniteOver_hide{
+  display: none;
+}
