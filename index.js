@@ -12,6 +12,7 @@
       // 基础配置
       const baseOptions={
         el:'',
+        offsetTop:0,
         offsetBottom:0,
         allowDistance:50,
         loadingDom:'<div class="q_infiniteLoading q_infiniteLoading_hide">正在加载...</div>',
@@ -31,7 +32,7 @@
       // 挂载dom的视口高度
       this.elClientHeight=this.$el.clientHeight
       // 挂载dom距离顶部的高度
-      this.offsetTop=this.$el.offsetTop
+      this.offsetTop=document.defaultView.getComputedStyle(this.$el).marginTop||this.$options.offsetTop
       // 挂载dom距离底部的高度
       this.offsetBottom=this.$options.offsetBottom
       // 允许挂载dom距离底部的高度
